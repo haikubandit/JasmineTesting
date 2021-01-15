@@ -24,6 +24,7 @@ function setupIntialValues() {
 	document.getElementById('loan-amount').value = 20000;
 	document.getElementById('loan-years').value = 30;
 	document.getElementById('loan-rate').value = 0.4;
+	update();
 }
 
 // Get the current values from the UI
