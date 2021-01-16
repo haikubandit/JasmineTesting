@@ -12,7 +12,7 @@ describe('Servers test (with setup and tear-down)', function() {
 	});
 
 	it('should create table row element and pass to appendTd function with input value', function() {
-		// submitServerInfo();
+		allServers = { server1: { serverName: 'Alice' } };
 		updateServerTable();
 
 		expect(serverTbody.querySelectorAll('tr').length).toEqual(1);
@@ -20,8 +20,8 @@ describe('Servers test (with setup and tear-down)', function() {
 
 	afterEach(function() {
 		// teardown logic
-		// serverNameInput.value = '';
-		// allServers = {};
-		// serverTbody.innerHTML = '';
+		serverNameInput.value = '';
+		allServers = {};
+		serverTbody.innerHTML = '';
 	});
 });
